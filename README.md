@@ -1,55 +1,76 @@
+Here’s your full **README.md** you can copy and use right now:
+
+---
+
 # User Feedback API
 
-Simple web application where users can submit feedback using a form.  
-Feedbacks are stored in a JSON file and can be retrieved as JSON data.
+Simple web application where users can submit feedback through a form.  
+Feedbacks are saved in a JSON file and can be retrieved as a JSON list.
+
+---
 
 ## Features
-- Submit feedback with name, comment, and rating
-- View all feedbacks (JSON output)
-- Data is saved in a simple JSON file
-- Basic form validation
-- Basic routing (GET and POST)
+- Submit feedback with **name**, **comment**, and **rating**.
+- View all submitted feedbacks as **JSON**.
+- Store feedbacks in a simple **JSON file**.
+- Basic form validation and error handling.
+
+---
 
 ## Tech Stack
 - Python 3
 - Flask
 - HTML5
 
+---
+
 ## How to Run
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/guimartinson/feedbackAPI
+   git clone https://github.com/guimartinson/feedbackAPI.git
    cd feedback_api
-Install Flask:
+   ```
 
-bash
-Copy
-Edit
-pip install flask
-Run the app:
+2. **Install dependencies:**
+   ```bash
+   pip install flask
+   ```
 
-bash
-Copy
-Edit
-python app.py
-Open your browser and go to:
+3. **Run the app:**
+   ```bash
+   python app.py
+   ```
 
-arduino
-Copy
-Edit
-http://localhost:5000/
-Project Structure
-bash
-Copy
-Edit
+4. **Open your browser and go to:**
+   ```
+   http://localhost:5000/
+   ```
+
+---
+
+## Project Structure
+```
 feedback_api/
 │
-├── app.py           # Main Flask app
+├── app.py           # Flask backend
 ├── templates/
-│   └── form.html    # Feedback form (HTML)
-├── feedbacks.json   # Storage for feedbacks (created after first feedback)
-API Endpoints
-GET /feedbacks → Returns all feedbacks as JSON
+│   └── form.html    # HTML form for submitting feedback
+├── feedbacks.json   # (auto-created) to store feedbacks
+```
 
-POST /submit → Submit a feedback through form# feedbackAPI
+---
+
+## Available Routes
+- `GET /` → Show the feedback form.
+- `POST /submit` → Submit feedback from the form.
+- `GET /feedbacks` → View all feedbacks in JSON format.
+
+---
+
+## Example Usage
+1. User fills the form with name, comment, and rating.
+2. Backend receives and stores the feedback.
+3. User can view all feedbacks through `/feedbacks`.
+
+---
