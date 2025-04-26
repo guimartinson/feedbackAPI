@@ -19,7 +19,7 @@ Feedbacks are stored in a JSON file and can be retrieved as JSON data.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/feedback_api.git
+   git clone https://github.com/guimartinson/feedbackAPI
    cd feedback_api
 Install Flask:
 
